@@ -16063,57 +16063,7 @@
 
     
     var ww=5400;    
-    var pp=7200;
-    let ff=9000;
-
-    let wwwa=5.4;
-    let wwa=7.2;
-    let wwb=9;
-
-    let gga=7.2;
-    let ggb=9.2;
-    let ggc=12.2;
-
-    let yya=9.0;
-    let yyb=11.0;
-    let yyc=14.0;
-
     
-    media=document.querySelector(".media");
-    media1=document.querySelector(".media1");
-    media2=document.querySelector(".media2");
-    media3=document.querySelector(".media3");
-    function ant(){
-        //wwwa=wwwa+1.8;
-        //wwa=wwa+1.8;
-        //wwb=wwb+1.8;
-        media1.style.animation='aaa 1s ease-out '+ wwwa +'s forwards, '+'bbb 1s ease-out '+wwa+'s forwards, '+'prince 0s linear '+wwb+'s forwards ';        
-        wwwa=wwwa+5.4;
-        wwa=wwa+5.4;
-        wwb=wwb+5.4;
-        setTimeout(ant,ww);
-    }
-    function antA(){
-        media2.style.animation='aaa 1s ease-out '+ gga +'s forwards, '+'bbb 1s ease-out '+ggb+'s forwards, '+'prince 0s linear '+ggc+'s forwards ';
-        gga=gga+5.4;
-        ggb=ggb+5.4;
-        ggc=ggc+5.4;
-        pp=5400;
-        setTimeout(antA,pp);
-    }
-    function antB(){
-        media3.style.animation='aaa 1s ease-out '+ yya +'s forwards, '+'bbb 1s ease-out '+yyb+'s forwards, '+'prince 0s linear '+yyc+'s forwards ';
-        yya=yya+5.4;
-        yyb=yyb+5.4;
-        yyc=yyc+5.4;
-        ff=5400;
-        setTimeout(antB,ff);
-
-    }
-    
-    setTimeout(ant,ww);
-    setTimeout(antA,pp);
-    setTimeout(antB,ff);
     p1a=document.querySelector('.p1a');
     p1b=document.querySelector('.p1b');
     p1c=document.querySelector('.p1c');
@@ -17282,6 +17232,65 @@
     });
 
     window.onload=function(){
+        
+
+
+        var pp=7200;
+    let ff=9000;
+
+    let wwwa=5.4;
+    let wwa=7.2;
+    let wwb=9;
+
+    let gga=7.2;
+    let ggb=9.2;
+    let ggc=12.2;
+
+    let yya=9.0;
+    let yyb=11.0;
+    let yyc=14.0;
+
+    
+    media=document.querySelector(".media");
+    media1=document.querySelector(".media1");
+    media2=document.querySelector(".media2");
+    media3=document.querySelector(".media3");
+    function ant(){
+        //wwwa=wwwa+1.8;
+        //wwa=wwa+1.8;
+        //wwb=wwb+1.8;
+        media1.style.animation='aaa 1s ease-out '+ wwwa +'s forwards, '+'bbb 1s ease-out '+wwa+'s forwards, '+'prince 0s linear '+wwb+'s forwards ';        
+        wwwa=wwwa+5.4;
+        wwa=wwa+5.4;
+        wwb=wwb+5.4;
+        setTimeout(ant,ww);
+    }
+    function antA(){
+        media2.style.animation='aaa 1s ease-out '+ gga +'s forwards, '+'bbb 1s ease-out '+ggb+'s forwards, '+'prince 0s linear '+ggc+'s forwards ';
+        gga=gga+5.4;
+        ggb=ggb+5.4;
+        ggc=ggc+5.4;
+        pp=5400;
+        setTimeout(antA,pp);
+    }
+    function antB(){
+        media3.style.animation='aaa 1s ease-out '+ yya +'s forwards, '+'bbb 1s ease-out '+yyb+'s forwards, '+'prince 0s linear '+yyc+'s forwards ';
+        yya=yya+5.4;
+        yyb=yyb+5.4;
+        yyc=yyc+5.4;
+        ff=5400;
+        setTimeout(antB,ff);
+
+    }
+    
+    setTimeout(ant,ww);
+    setTimeout(antA,pp);
+    setTimeout(antB,ff);
+
+
+
+
+        
         category=localStorage.getItem('category');
         pricess=localStorage.getItem('prices');
         if(category=="watch" && pricess=="lowest"){
